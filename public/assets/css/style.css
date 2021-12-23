@@ -1,0 +1,45 @@
+.navbar{
+    background-color: white !important;
+    box-shadow: 1px 1px 7px rgb(228, 228, 228);
+    margin-bottom:30px;
+}
+.active{
+    font-weight: bold;
+    color:rgb(97, 97, 97) !important;
+}
+.content{
+    min-height:100vh !important;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth a{
+    text-decoration: none;
+}
+.auth-card{
+    border:none !important;
+    box-shadow: 1px 1px 7px rgb(194, 194, 194);
+    border-radius:20px !important;
+}
+.back{
+    background-color:rgba(128, 128, 128, 0.192);
+    transform:rotate(-3deg);
+    border-radius:20px;
+}
+.front{
+    color:white;
+    padding:25px;
+    padding-bottom:8px;
+    border-radius:20px;
+    transform:rotate(3deg);
+}
+.front a{
+    color:white;
+    text-decoration: none;
+}
+.front a:hover{
+    color:blue;
+}
+.front-produk{
+    background-image:linear-gradient(to bottom right, #25f152, #b3ff00) !important;
+}
