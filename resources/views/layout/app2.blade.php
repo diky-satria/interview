@@ -16,14 +16,14 @@
   <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="{{ url('home') }}">TDWR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav text-center">
                     @if(Auth::user()->role == 'admin')
                     <a class="nav-link {{ Request::is('dashboard') ? 'active' : '' }}" href="{{ url('dashboard') }}">Dashboard</a>
                     @endif
@@ -38,7 +38,7 @@
     <!-- end navbar -->
 
     <!-- content -->
-    <div class="container">
+    <div class="container" style="margin-top:80px;">
         @yield('content')
     </div>
 

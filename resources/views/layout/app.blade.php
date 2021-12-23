@@ -15,7 +15,7 @@
 
     <!-- content -->
     <div class="content">
-        <div class="col-md-4">
+        <div class="col-md-4 col-11">
             @yield('content')
         </div>
     </div>
